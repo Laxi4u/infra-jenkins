@@ -1,11 +1,9 @@
 variable "AWS_ACCESS_KEY" {
-  type = string
-  default = "AKIAWZQUPLR3UJFZPGV6"
+
+  
 }
 
 variable "AWS_SECRET_KEY" {
-    default = "63wrKZ+5CFXrv/svk+s/gB8ZzWq3JHiyx4rrXzge"
-  
 }
 
 variable "AWS_REGION" {
@@ -42,6 +40,12 @@ variable "tags" {
         environment = "DEV"
         terraform   = "true"
     }
+}
+
+
+variable "versioning" {
+    type        = bool
+    default     = true
 }
 
 variable "bucket_prefix" {
