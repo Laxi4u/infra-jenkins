@@ -31,3 +31,21 @@ variable "inst-type" {
     default = "t2.micro"
   
 }
+
+variable "acl" {
+    default     = "private"
+}
+
+variable "tags" {
+    type        = map
+    default     = {
+        environment = "DEV"
+        terraform   = "true"
+    }
+}
+
+variable "bucket_prefix" {
+    type        = string
+    
+    default     = "batch12-suresh-s3bucket"
+}
